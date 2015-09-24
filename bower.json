@@ -1,0 +1,23 @@
+{
+  "name": "cfdispatcher",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "chuckfairy <charlieabeling@gmail.com>"
+  ],
+  "description": "Rip off of mrdoob's event dispatcher",
+  "keywords": [
+    "eventdispatcher",
+    "event",
+    "dispatcher"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chuckfairy/cfdispatcher",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
