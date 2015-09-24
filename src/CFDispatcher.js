@@ -6,18 +6,18 @@
  *
  */
 
-function CFEventDispatcher() {}
+function CFDispatcher() {}
 
-CFEventDispatcher.prototype = {
+CFDispatcher.prototype = {
 
-	constructor: CFEventDispatcher,
+	constructor: CFDispatcher,
 
 	apply: function ( object ) {
 
-		object.on = CFEventDispatcher.prototype.on;
-		object.hasListener = CFEventDispatcher.prototype.hasListener;
-		object.removeListener = CFEventDispatcher.prototype.removeListener;
-		object.dispatch = CFEventDispatcher.prototype.dispatch;
+		object.on = CFDispatcher.prototype.on;
+		object.hasListener = CFDispatcher.prototype.hasListener;
+		object.removeListener = CFDispatcher.prototype.removeListener;
+		object.dispatch = CFDispatcher.prototype.dispatch;
 
         return object;
 
@@ -112,3 +112,8 @@ CFEventDispatcher.prototype = {
 
 };
 
+if( module && typeof( module.exports ) === "object" ) {
+
+    module.exports = CFDispatcher;
+
+}
